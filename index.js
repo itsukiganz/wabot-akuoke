@@ -656,13 +656,11 @@ let settingstatus = 0;
 			switch(command) {
 				case 'menu':
 				case 'help':
-                                   stst = await client.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status				var menu = `Hai Kak ${pushname}, ${ucapansalam}
+                           var menu = `Hai Kak ${pushname}, ${ucapansalam}
 Silahkan Pilih Untuk Menampilkan Menu Bot
 
 ❏»  USER INFO
 ┃ ➤❖Nama : ${pushname}_
-┃ ➤❖Bio User : ${stst}_
 ┃ ➤❖Nomor : @${stod.split('@')[0]}_
 ┗━━━━━━━━━━━━━━❏
    
