@@ -656,9 +656,27 @@ let settingstatus = 0;
 			switch(command) {
 				case 'menu':
 				case 'help':
-				var menu = `${ucapansalam}
+stst = await helga.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status				var menu = `${ucapansalam}
 				Semoga harimu menyenangkan
-				
+
+❏»  USER INFO
+┃ ➤❖Status :  ${isOwner ? 'Owner' : 'User'}_
+┃ ➤❖Nama : ${pushname}_
+┃ ➤❖Bio User : ${stst}_
+┃ ➤❖Nomor : @${stod.split('@')[0]}_
+┗━━━━━━━━━━━━━━❏
+   
+   ╭◪ BOT INFO
+   ├❖ Name bot : ${NamaBot}
+   ├❍ Nomor bot : 0858690020467
+   ├❖ Owner bot : ${NamaOwner}
+   ├❍ Owner Number : wa.me/${NomorOwner}
+   ├❖ Prefix : [ Multi ]
+   ╰─────────────────────╯
+   
+   *Pukul :* ${moment().utcOffset('+0700').format('HH:mm')}
+
 INFO CREATOR BOT
 *Nama : Aprilia*
 *Instagram : @aprigans_*
